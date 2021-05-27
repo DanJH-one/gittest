@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<button id="mid">点我</button>-->
+<div id="div1">div1</div>
+<div id="div2">div2</div>
+<div class="cls">div3</div>
+<div class="cls">div4</div>
+<input type="text" name="username"/>
+</body>
+<script>
+    //1. getElementById()   根据id属性值获取元素对象
+    var byId = document.getElementById("div1");
+    alert(byId)
+
+    //2. getElementsByTagName()   根据元素名称获取元素对象们，返回数组
+    var tagName = document.getElementsByTagName("div");
+    alert(tagName)
+
+    //3. getElementsByClassName()  根据class属性值获取元素对象们，返回数组
+    var name = document.getElementsByClassName("cls");
+    alert(name)
+
+    //4. getElementsByName()   根据name属性值获取元素对象们，返回数组
+    var byName = document.getElementsByName("username");
+    alert(byName)
+
+    //5. 子元素对象.parentElement属性   获取当前元素的父元素
+   var parentElement = byId.parentElement;
+    alert(parentElement)
+</script>
+</html>
